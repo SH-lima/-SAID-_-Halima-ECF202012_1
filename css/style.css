@@ -1,0 +1,93 @@
+@import url('http://fonts.cdnfonts.com/css/post-no-bills-jaffna');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap');              
+body{
+    /* background-color: black; */
+    background: linear-gradient(to left,  rgb(202, 6, 112) , black 70.71%);
+    font-family: 'Andika New Basic', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+/* ----------------------------format mobile ---------------------- */
+/* -------------------------des class standards */
+a{
+    color: white;
+    text-decoration: none;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+/* ------------------Navbar et logo  */
+header{
+    border-bottom: 1px solid  rgba(255, 255, 255, 31%);
+    font-size: 2rem;
+}
+header h2{
+    margin: 10px;
+    font-family: 'Post No Bills Jaffna Medium', sans-serif;
+}
+/* --------------------bar de recherche  */
+.recherchRecent{
+    display: none;
+}
+#searchBar{
+    margin: 10px 20px;
+    padding:20px 10px;
+    width: 80%;
+    border-radius: 55px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 50%);
+    font-size: 18px;
+    color: black;
+}
+/* ---------------la phrase d'acrouche */
+h1{
+    margin-top:7vh ;
+    margin-left: 15px;
+    font-size: 5vh;
+}
+/* ----------------style des sections */
+.cards{
+    overflow-x: scroll;
+}
+.cards img {
+    border-radius: 55px;
+    margin: 5px;
+}
+h3{
+    margin: 10px;
+    font-size: 2rem;
+}
+/* -------------------style de logo  */
+#logo{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Post No Bills Jaffna Medium', sans-serif;
+    border-top: 1px solid  rgba(255, 255, 255, 31%);
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+/* ------------------------------format desktop--------------- */
+@media (min-width:500px){
+aside{
+    /* display: inline-block; */
+    width: 30%;
+    height: 100%;
+}
+.contenue{
+    display: flex;
+}
+main{
+    width: 70%;
+}
+.cards{
+    overflow-x: none;
+}
+}
