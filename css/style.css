@@ -5,10 +5,15 @@ body{
     background: linear-gradient(to left,  rgb(202, 6, 112) , black 70.71%);
     font-family: 'Andika New Basic', sans-serif;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
+    margin: 0;
+    width: 100%;
 }
 /* ----------------------------format mobile ---------------------- */
 /* -------------------------des class standards */
+li{
+    list-style: none;
+}
 a{
     color: white;
     text-decoration: none;
@@ -29,6 +34,13 @@ header{
 header h2{
     margin: 10px;
     font-family: 'Post No Bills Jaffna Medium', sans-serif;
+}
+/* -----cacher la navBar sur format mobile et afficher juste burgerBar */
+.navBar {
+    display: none;
+}
+.burgerBar {
+    display: flex;
 }
 /* --------------------bar de recherche  */
 .recherchRecent{
@@ -52,6 +64,7 @@ h1{
 }
 /* ----------------style des sections */
 .cards{
+    display: flex;
     overflow-x: scroll;
 }
 .cards img {
@@ -62,32 +75,90 @@ h3{
     margin: 10px;
     font-size: 2rem;
 }
-/* -------------------style de logo  */
-#logo{
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Post No Bills Jaffna Medium', sans-serif;
-    border-top: 1px solid  rgba(255, 255, 255, 31%);
+/* -------------------style de logo et footer */
+footer{
+    margin-top: 10px;
     background-color: black;
+}
+#brand{
+    font-size: 60px;
+    border-top: 1px solid  rgba(255, 255, 255, 31%);
     position: fixed;
+    text-align: center;
     bottom: 0px;
     width: 100%;
     margin: 0;
+    background-color: black;  
+}
+.logo{
+    font-family: 'Post No Bills Jaffna Medium', sans-serif;
+}
+/* ------------cacher les listes sur format mobile */
+#contactReSociaux{
+    display:none;
 }
 /* ------------------------------format desktop--------------- */
 @media (min-width:500px){
-aside{
-    /* display: inline-block; */
-    width: 30%;
-    height: 100%;
-}
+ /* -----------la totalité de contenue  */
 .contenue{
     display: flex;
+    margin: 10px 10px 20px;
+}   
+/* ---------------- afficher le contenue de coté sur 30% de viewport */
+aside{
+    width: 25%;
+    height: 100%;
 }
+.recherchRecent{
+    display: block;
+}
+/* --------------afficher le contenue principale  */
 main{
-    width: 70%;
+    width: 75%;
 }
 .cards{
-    overflow-x: none;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+
 }
+h1{
+    font-size: 5vw;
+}
+/* ----------------footer */
+#brand{
+    position: relative;
+}
+#contactReSociaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#reSociaux{
+    font-size: 30px;
+    margin: 10px 0;
+}
+footer{
+    padding-bottom: 15px;  
+}
+
+/* ---------------------------- Header*/
+.burgerBar{
+    display: none;
+}
+.navBar{
+    display: flex;
+    padding: 15px 0;
+    background-color: black;
+}
+.navBar h3{
+    flex: 1;
+    text-align: center;
+}
+#navItems{
+    flex: 2;
+    font-size: 18px;
+}
+
 }
