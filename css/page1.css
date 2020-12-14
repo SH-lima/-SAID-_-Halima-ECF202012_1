@@ -1,0 +1,154 @@
+@import url('http://fonts.cdnfonts.com/css/post-no-bills-jaffna');
+main{
+    margin: 18px;
+}
+.artiste{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+        "img name"
+        "dcr dcr"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.artiste img{
+    grid-area: img;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin: auto;
+    
+}
+.name{
+    grid-area: name;
+    font-size: 2rem;
+    text-align: center;
+}
+#description{
+    grid-area: dcr;
+}
+/* ---------------------les albums */
+.album{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap:5px;
+}
+.album img{ 
+    margin: auto;
+}
+/* -----------les chansons */
+aside{
+    width:90%;
+    margin: auto;
+}
+aside p{
+    width: 80%;
+    margin: 10px auto;
+    height: 30px;
+    background-color:  rgba(255, 255, 255, 50%);
+    border-radius: 10px;
+}
+aside img{
+    border-radius: 55px;
+    margin: auto;
+    display: block;
+}
+/* ------------------------------format desktop--------------- */
+@media (min-width:1100px){
+     /* -----------la totalité de contenue  */
+.contenue{
+    display: flex;
+    margin: 10px 10px 20px;
+}   
+/* ---------------- afficher le contenue de coté sur 30% de viewport */
+aside{
+    width: 25%;
+    height: 100%;
+    margin: 10px auto;
+    border-left:  1px solid  rgba(255, 255, 255, 31%);
+    padding: 10Px;
+}
+
+/* --------------afficher le contenue principale  */
+main{
+    width: 75%;
+}
+.artiste{
+    grid-template-areas:
+    "img name name name"
+    "img dcr dcr dcr"
+;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+align-items: flex-start;
+}
+.artiste img{
+    width: 13vw;
+    height: 15vw;
+    border-radius: 20%;
+}
+/* ---------------------les albums */
+.album{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-gap:5px;
+}
+.album img {
+    border-radius: 55px;
+    margin: 5px;
+    width: 200px !important;
+    height: 200px !important;
+}
+}
+/* --------------format tablette  */
+@media (min-width:500px){
+         /* -----------la totalité de contenue  */
+.contenue{
+    display: flex;
+    margin: 10px 10px 20px;
+}   
+/* ---------------- afficher le contenue de coté sur 30% de viewport */
+aside{
+    width: 30%;
+    height: 100%;
+    margin: 10px auto;
+    border-left:  1px solid  rgba(255, 255, 255, 31%);
+    padding: 10Px;
+}
+
+/* --------------afficher le contenue principale  */
+main{
+    width: 70%;
+}
+.artiste{
+    grid-template-areas:
+    "img name name name"
+    "img dcr dcr dcr"
+;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+align-items: flex-start;
+}
+.artiste img{
+    width: 13vw;
+    height: 15vw;
+    border-radius: 20%;
+}
+/* ---------------------les albums */
+.album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap:5px;
+}
+.album img {
+    border-radius: 55px;
+    margin: 5px;
+    width: 200px !important;
+    height: 200px !important;
+}   
+}
