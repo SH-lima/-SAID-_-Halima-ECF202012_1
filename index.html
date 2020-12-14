@@ -11,28 +11,41 @@
 </head>
 <body>
     <header >
+        <!-- la tete de page  -->
+        <!-- les elements de la bar de navigation en format mobile  -->
         <div class="burgerBar center">
-         <h2>BIENVENUE</h2>
-         <a href="#"><i class="fas fa-bars"></i></a>  
+            <a href="#" id="burgerBar"><i class="fas fa-bars"></i></a> 
+            <h2>BIENVENUE</h2>
         </div>
+        <!-- les elements qui s'affichent dans le menu en cliquant sur burgerBar -->
+        <nav class="hide">
+              <ul>
+                <li>NOUVEAUTÉS</li>
+                <li>ARTISTES</li>
+                <li>ALBUMS</li>
+                <li>CONCERTS</li>
+                <li>A PROPOS</li>
+                <li>LIENS</li>
+                <li>PARTENAIRES</li>
+                <li>SUPPORT</li>
+                <li>CONTACT</li>
+              </ul>
+        </nav>
+        <!-- les elements de la bar de navigation en format tablette et desktop  -->
         <div class="navBar center">
-            <!-- <div class="logoContainer "></div> -->
                 <h3 class="logo " ><a href="index.html">MY MUSIC</a></h3>
-            
-            <!-- <nav ></nav> -->
                 <ul id="navItems" class="center">
                     <li>Nouveautés</li>
                     <li>Artistes</li>
                     <li>Albums</li>
                     <li>Concerts</li>
-                </ul>
-            
+                </ul> 
         </div> 
-
     </header>
-    
+    <!-- le contenue principale  -->
     <div class="contenue">
         <aside>
+            <!-- la bar de recherche et les dernières  recherches  -->
             <input id="searchBar" placeholder="Recherche ..." type="text">
             <div class="recherchRecent">
                 <h4>Recherches récentes :</h4> 
@@ -44,8 +57,10 @@
             </div>
         </aside>
         <main>
+            <!-- la phrase accrouchée  -->
             <h1>Écoutez de la musique<br>sans limite </h1>
             <section>
+                <!-- afficher les artistes favoris en image  -->
                 <h4>Artistes Favoris</h4>
                 <div class="cards ">
                     <a href="page1.html"><img src="img/download (4).jpeg" alt="artiste" width="200vw" height="200vw"></a>
@@ -60,6 +75,7 @@
                 </div>
             </section>
             <section>
+                <!-- afficher les dérnières chansons écoutées -->
                 <h4>Écoutés récemment</h4>
                 <div class="cards ">
                     <img src="img/download (1).jpeg" alt="artiste" width="200vw" height="200vw">
@@ -74,15 +90,18 @@
 
         </main> 
     </div>
-    
+    <!-- le pied de page  --> 
     <footer>
-        <h2 class="logo" id="brand"><a href="index.html">MY MUSIC</a></h2>
+        <!-- logo -->
+        <h2 class="logo fixedPosition" id="brand"><a href="index.html">MY MUSIC</a></h2>
+        <!-- les réseaux sociaux  -->
         <div id="contactReSociaux" >
             <ul id="reSociaux">
                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             </ul>
+            <!-- plus d'infos  -->
             <ul id="contact">
                 <li>A PROPOS</li>
                 <li>LIENS</li>
@@ -92,6 +111,7 @@
             </ul>
 
         </div>
-    </footer>                                  
+    </footer> 
+    <script src="app.js"></script>                                 
 </body>
 </html>

@@ -1,5 +1,10 @@
+/* un fichier css qui contient que le style de footer et header , 
+relié aux toutes les pages afin d'éviter de répiter le meme code plusieurs fois  */
+
+/*  des polices de caractères */
 @import url('http://fonts.cdnfonts.com/css/post-no-bills-jaffna');
 @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap');              
+/* donner toute la page un fond, un police de caractère, une couleur pour l'écriture */
 body{
     /* background-color: black; */
     background: linear-gradient(to left,  rgb(202, 6, 112) , black 70.71%);
@@ -9,48 +14,90 @@ body{
     margin: 0;
     width: 100%;
 }
+
+
 /* ----------------------------format mobile ---------------------- */
-/* -------------------------des class standards */
-li{
-    list-style: none;
-}
-a{
-    color: white;
-    text-decoration: none;
-}
-.center{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.flex{
-    display: flex;
-}
+    /* -------------------------des class standards */
+    /* enlever le style par defaut de elements de liste  */
+    li{
+        list-style: none;
+    }
+    /* enlever le style par defaut d'un lien */
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    /* aligner les elements en center  */
+    .center{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* aligner horizantale  */
+    .flex{
+        display: flex;
+    }
+
+
 /* ------------------Navbar et logo  */
-header{
-    border-bottom: 1px solid  rgba(255, 255, 255, 31%);
-    font-size: 2rem;
-}
-header h2{
-    margin: 10px;
-    font-family: 'Post No Bills Jaffna Medium', sans-serif;
-}
+    /* mettre une ligne en bas de header   */
+    header{
+        border-bottom: 1px solid  rgba(255, 255, 255, 31%);
+        font-size: 2rem;
+    }
+    /* donner une police de caractère speciale au titre  */
+    header h2{
+        margin: 10px;
+        font-family: 'Post No Bills Jaffna Medium', sans-serif;
+    }
+
+
 /* -----cacher la navBar sur format mobile et afficher juste burgerBar */
-.navBar {
+    /* cacher la bar de navigation de format desktop et afficher que le burger bar */
+    .navBar {
+        display: none;
+    }
+    .burgerBar {
+        display: flex;
+    }
+/* -------------- elements menu */
+nav{
+    font-size: 22px;
+}
+/* permettre d'afficher ou cacher la fenetre menu  */
+.hide{
     display: none;
 }
-.burgerBar {
-    display: flex;
+/* style de menu  */
+nav ul{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 60%;
+    height: 78vh;
+    background-color: black;
+    top:11.5%;
+    left: 0;
+}
+nav li{
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 41%);
+    padding: 10px 30px 15px ;
 }
 /* -------------------style de logo et footer */
 footer{
     margin-top: 10px;
     background-color: black;
 }
+/* permettre de fixer le footer */
+.fixedPosition{
+    position: fixed;
+}
+/* logo */
 #brand{
     font-size: 60px;
     border-top: 1px solid  rgba(255, 255, 255, 31%);
-    position: fixed;
+    
     text-align: center;
     bottom: 0px;
     width: 100%;

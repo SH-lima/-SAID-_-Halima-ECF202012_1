@@ -11,15 +11,29 @@
 </head>
 <body>
     <header >
+        <!-- la tete de page  -->
+        <!-- les elements de la bar de navigation en format mobile  -->
         <div class="burgerBar center">
-         <h2>BIENVENUE</h2>
-         <a href="#"><i class="fas fa-bars"></i></a>  
+        <a href="#" id="burgerBar"><i class="fas fa-bars"></i></a> 
+         <h2>BIENVENUE</h2> 
         </div>
+        <!-- les elements qui s'affichent dans le menu en cliquant sur burgerBar -->
+        <nav class="hide">
+            <ul>
+              <li>NOUVEAUTÉS</li>
+              <li>ARTISTES</li>
+              <li>ALBUMS</li>
+              <li>CONCERTS</li>
+              <li>A PROPOS</li>
+              <li>LIENS</li>
+              <li>PARTENAIRES</li>
+              <li>SUPPORT</li>
+              <li>CONTACT</li>
+            </ul>
+        </nav>
+        <!-- les elements de la bar de navigation en format tablette et desktop  -->
         <div class="navBar center">
-            <!-- <div class="logoContainer "></div> -->
             <h3 class="logo " ><a href="index.html">MY MUSIC</a></h3>
-            
-            <!-- <nav ></nav> -->
                 <ul id="navItems" class="center">
                     <li>Nouveautés</li>
                     <li>Artistes</li>
@@ -28,15 +42,17 @@
                 </ul>
             
         </div> 
-
     </header>
+    <!-- le contenue principale  -->
     <div class="contenue">
         <main>
+            <!-- présenter l'artiste avec son nom une image et une petite description  -->
             <div class="artiste">
                 <img src="img/download (4).jpeg" alt="artiste" >
                 <h3 class="name">Michael Jackson </h3>
                 <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim, quis ...</p>
             </div>
+            <!-- présenter ses albums -->
             <h3>Albums</h3>
             <div class="album">
                 <img src="img/download (2).jpeg" alt="artiste" width="150vw" height="150vw">
@@ -46,6 +62,7 @@
                 <img src="img/mj3.jpeg" alt="artiste" width="150vw" height="150vw">
                 <img src="img/mj4.jpeg" alt="artiste" width="150vw" height="150vw">
             </div>
+            <!-- présenter ses dérniers concerts  -->
             <h3>Ses dérniers concerts </h3>
             <div class="album">
                 <img src="img/paris.jpeg" alt="artiste" width="150vw" height="150vw">
@@ -57,8 +74,10 @@
             </div>
         </main>
         <aside>
+            <!--  présenter ses meilleurs chansons  -->
             <h3>Best-of</h3>
             <img src="img/download (2).jpeg" alt="artiste" width="250vw" height="250vw">
+            <!-- un contenue provisoire à la places des chansons  -->
             <p></p>
             <p></p>
             <p></p>
@@ -69,13 +88,17 @@
         </aside>
     </div>
     <footer>
+        <!-- le pied de page  -->
+        <!-- logo -->
         <h2 class="logo" id="brand"><a href="index.html">MY MUSIC</a></h2>
+        <!-- les réseaux sociaux  -->
         <div id="contactReSociaux" >
             <ul id="reSociaux">
                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             </ul>
+            <!-- plus d'infos  -->
             <ul id="contact">
                 <li>A PROPOS</li>
                 <li>LIENS</li>
@@ -83,8 +106,8 @@
                 <li>SUPPORT</li>
                 <li>CONTACT</li>
             </ul>
-
         </div>
-    </footer>  
+    </footer> 
+    <script src="app.js"></script> 
 </body>
 </html>

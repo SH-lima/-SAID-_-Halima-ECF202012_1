@@ -1,7 +1,9 @@
 @import url('http://fonts.cdnfonts.com/css/post-no-bills-jaffna');
+/*  */
 main{
     margin: 18px;
 }
+/* aligner les elements en utilisant une gride  */
 .artiste{
     display: grid;
     align-items: center;
@@ -13,6 +15,7 @@ main{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
+/* redimensionner les images pour format mobile  */
 .artiste img{
     grid-area: img;
     width: 30vw;
@@ -30,6 +33,7 @@ main{
     grid-area: dcr;
 }
 /* ---------------------les albums */
+/* mettre deux elements de gride par ligne  */
 .album{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -40,6 +44,7 @@ main{
     margin: auto;
 }
 /* -----------les chansons */
+/*  aligner les elements en centre verticalement */
 aside{
     width:90%;
     margin: auto;
@@ -57,9 +62,11 @@ aside img{
     display: block;
 }
 
+
 /* --------------format tablette  */
 @media (min-width:500px){
     /* -----------la totalité de contenue  */
+    /* aligner les elements horizantalement  */
     .contenue{
         display: flex;
         margin: 10px 10px 20px;
@@ -77,6 +84,7 @@ aside img{
     main{
         width: 70%;
     }
+    /* mettre les elements en gride et les aligner  */
     .artiste{
         grid-template-areas:
         "img name name name"
@@ -92,6 +100,7 @@ aside img{
         border-radius: 20%;
     }
     /* ---------------------les albums */
+    /* creer une gride de 3 columnes  */
     .album{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
