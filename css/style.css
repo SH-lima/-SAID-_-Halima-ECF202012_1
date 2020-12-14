@@ -35,37 +35,7 @@ h3{
     font-size: 2rem;
 }
 
-/* ------------------------------format desktop--------------- */
-@media (min-width:1100px){
- /* -----------la totalité de contenue  */
-.contenue{
-    display: flex;
-    margin: 10px 10px 20px;
-}   
-/* ---------------- afficher le contenue de coté sur 30% de viewport */
-aside{
-    width: 25%;
-    height: 100%;
-}
-.recherchRecent{
-    display: block;
-}
-/* --------------afficher le contenue principale  */
-main{
-    width: 75%;
-}
-.cards{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(5, 1fr);
 
-}
-h1{
-    font-size: 5vw;
-}
-
-
-}
 /* ------------------------------format tablette--------------- */
 @media (min-width:500px){
     .contenue{
@@ -90,4 +60,38 @@ h1{
         grid-template-columns: repeat(3, 1fr);
     
     }
+
 }
+
+
+/* ------------------------------format desktop--------------- */
+@media (min-width:1100px){
+    /* -----------la totalité de contenue  */
+   .contenue{
+       display: flex;
+       margin: 10px 10px 20px;
+   }   
+   /* ---------------- afficher le contenue de coté sur 30% de viewport */
+   aside{
+       width: 25%;
+       height: 100%;
+   }
+   .recherchRecent{
+       display: block;
+   }
+   /* --------------afficher le contenue principale  */
+   main{
+       width: 75%;
+   }
+   .cards{
+       display: grid;
+       grid-template-rows: auto;
+       grid-template-columns: repeat(5, 1fr);
+   
+   }
+   h1{
+       font-size: 5vw;
+   }
+   
+   
+   }
