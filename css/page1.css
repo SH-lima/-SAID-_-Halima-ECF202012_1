@@ -64,7 +64,7 @@ aside img{
 
 
 /* --------------format tablette  */
-@media (min-width:500px){
+@media (min-width:700px){
     /* -----------la totalité de contenue  */
     /* aligner les elements horizantalement  */
     .contenue{

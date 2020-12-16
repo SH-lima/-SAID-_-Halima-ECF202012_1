@@ -24,3 +24,36 @@ window.addEventListener("scroll", ()=>{
     }
     
 })
+
+
+// darkmode 
+const boutonDarkmode =document.querySelectorAll(".bouton")
+const menu =document.querySelector("nav ul")
+const navItems=document.querySelectorAll("nav li")
+const navBar=document.querySelector(".navBar")
+const brand=document.querySelector("#brand")
+const logo=document.querySelectorAll(".logo a")
+const contactItems=document.querySelectorAll(" i")
+const footer=document.querySelector("footer")
+
+
+boutonDarkmode.forEach((bouton)=>{
+    bouton.addEventListener("click", ()=>{
+        bouton.classList.toggle("left")
+        document.body.classList.toggle("color")
+        document.body.classList.toggle("background")
+        navBar.classList.toggle("transparent")
+        brand.classList.toggle("brandStyle")
+        logo.forEach((i)=>{
+            i.classList.toggle("pink")
+        })
+        footer.classList.toggle("brandStyle")
+        contactItems.forEach((i)=>{
+            i.classList.toggle("pink")
+        })
+        navItems.forEach((i)=>{
+            i.classList.toggle("menuStyle")
+        })
+        menu.classList.toggle("brandStyle")
+    })   
+})

@@ -117,7 +117,7 @@ h3{
 }
 
 /* ------------------------------format desktop--------------- */
-@media (min-width:500px){
+@media (min-width:700px){
     /* ----------------footer */
 #brand{
     position: relative;
@@ -153,4 +153,52 @@ footer{
     flex: 2;
     font-size: 18px;
 }
+}
+/* le bouton de darkmode  */
+.bouton{
+    position: absolute;
+    left:-10px;
+    top: -30%;
+}
+.bouton::before{
+    padding: 10px;
+     border-radius: 50%;
+    background-color: rgb(245, 188, 188); 
+
+}
+.left{
+    left: 40% !important;
+}
+
+.spaceBouton{
+    display: inline-block;
+    height: 35px;
+    width: 70px;
+    font-size: 40PX;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: relative;
+    
+}
+/* changer la couleur et background color de body */
+.color{
+    color: rgb(6, 6, 56);
+}
+.background{
+    background: linear-gradient(to left,  rgb(202, 6, 112) , white 70.71%);
+}
+.transparent{
+    background-color: transparent;
+}
+.brandStyle{
+    color: rgb(202, 6, 112);
+    background-color: white !important;
+}
+.pink{
+    color: rgb(202, 6, 112);
+}
+.menuStyle{
+    color: rgb(202, 6, 112);
+    background-color: white !important;
+    border-bottom: 1px solid rgb(202, 6, 112);
 }
