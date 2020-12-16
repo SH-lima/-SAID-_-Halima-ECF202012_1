@@ -180,7 +180,8 @@ footer{
     position: relative;
     
 }
-/* changer la couleur et background color de body */
+/* les classes nécessaires pour dark mode   */
+/*  permettre de changer la couleur et background color de body  et les titres les textes pour creer une harmonie */
 .color{
     color: rgb(6, 6, 56);
 }

@@ -27,6 +27,7 @@ window.addEventListener("scroll", ()=>{
 
 
 // darkmode 
+// selectionner tous les elements qui doivent changer la couleur ou bien le fond 
 const boutonDarkmode =document.querySelectorAll(".bouton")
 const menu =document.querySelector("nav ul")
 const navItems=document.querySelectorAll("nav li")
@@ -36,8 +37,9 @@ const logo=document.querySelectorAll(".logo a")
 const contactItems=document.querySelectorAll(" i")
 const footer=document.querySelector("footer")
 
-
+// pour tous les bouton de Dark mode 
 boutonDarkmode.forEach((bouton)=>{
+    // changer les couleurs de body, textes, titres, en cliquant sur la bouton 
     bouton.addEventListener("click", ()=>{
         bouton.classList.toggle("left")
         document.body.classList.toggle("color")
